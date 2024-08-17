@@ -13,3 +13,6 @@ This assignment is the creation of a basic HTML webpage
 This contains the CSS file that formats the HTML webpage
 #### HTML File
 This contains the creation of an HTML webpage
+### Module 3
+#### Module 3.2 Assignment
+This assignment contains the creation of a HTML Landing Page
