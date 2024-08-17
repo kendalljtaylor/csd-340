@@ -1,0 +1,40 @@
+#container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1 {
+	border: 1px solid #D6A800;
+	padding: 10px;
+	color: white;
+	background-color: #7843DA;}
+
+h2 {
+	border: 1px solid #D6A800;
+	padding: 10px;
+	color: white;
+	background-color: #7843DA;}
+
+h3 {
+	border: 1px solid #D6A800;
+	padding: 10px;
+	color: white;
+	background-color: #7843DA;}
+
+h4 {
+	border: 1px solid #D6A800;
+	padding: 10px;
+	color: white;
+	background-color: #7843DA;}
+
+a {
+	color: #7843DA;
+	text-decoration: none;}
+
+a:hover {
+	color: #C6A7FE;}
+a:visited {
+	color: #A175F1;}
+	
+	
