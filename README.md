@@ -8,3 +8,8 @@
 This assignment shows the creation of a repository set up on github
 #### Building a Webpage
 This assignment is the creation of a basic HTML webpage
+### Module 2
+#### CSS File 
+This contains the CSS file that formats the HTML webpage
+#### HTML File
+This contains the creation of an HTML webpage
