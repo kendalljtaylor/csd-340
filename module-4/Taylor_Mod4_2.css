@@ -6,13 +6,9 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
     margin-top: 10%;
-    border: 1px solid black;}
-
-h3{
+    border: 1px solid black;
     text-align: center;}
 
-figure{
-    text-align: center;}
 
 figcaption{
     font-size: 0.75em;
