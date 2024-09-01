@@ -16,3 +16,8 @@ This contains the creation of an HTML webpage
 ### Module 3
 #### Module 3.2 Assignment
 This assignment contains the creation of a HTML Landing Page
+### Module 5
+#### HTML File
+This contains the creation of a webpage with images and captions
+#### CSS File
+This is the style sheet for the Module 4 HTML webpage
