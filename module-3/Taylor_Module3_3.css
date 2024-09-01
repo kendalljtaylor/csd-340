@@ -14,7 +14,6 @@ h3 {
 	float: left;
 	padding: 10px;
 	list-style-position: inside;
-	h3{font-weight: 500;}
 	font-weight: 300;}
 
 .right {
@@ -27,7 +26,6 @@ h3 {
 	padding: 10px;
 	list-style-position: inside;
 	ul{list-style-type: upper-roman;}
-	h3{font-weight: 500;}
 	font-weight: 300;}
 
 .last {
