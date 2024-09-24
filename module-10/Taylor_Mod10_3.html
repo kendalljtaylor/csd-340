@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+<script>
+	function displayImage(imageFile){
+		var largerImage = document.getElementById("mainImage");
+		var newNode = document.createElement("img);
+		newNode.id = "mainImage";
+		newNode.src = "imageFile";
+		newNode.alt = "Large Image";
+		newNode.clasName = "mainImage";
+		newNode.style.width = "400px";
+		newNode.style.height = "400px";
+		largerImage.parentNode.replaceChild(newNode, largerImage);
+	}
+</script> 
+</head>
+
+<body>
+	<div id="container">
+		<h1 style="text-align:center">Assignment 10.3: JavaScript - Part 2</h1>
+	</div>
+	<div style="text-align:center"
+		onmouseover="this.style.color='red';"
+		onmouseout="this.style.color='purple';">
+	Put mouse over monkey to see him dance.
+	<br/>
+	<br/>
+	Click on monkey to invite his friend.
+	</div>
+	<div id="monkey" style="text-align:center">
+		<a href=#
+			onmouseover="monkey.src='monkeydance.jpg';"
+			onmouseout="monkey.src='monkey.jpg';"
+			onclick="monkey.src='monkeyfriend.jpg';"
+		>
+		<img border = 5px name = "monkey" src = "monkey.jpg">
+		</a>
+	</div>
+	<br/>
+	<div style="text-align:center"
+		onmouseover="this.style.color='red';"
+		onmouseout="this.style.color='purple';">
+	Put mouse over tiger to see him dance. 
+	<br/>
+	Click on tiger to invite his friend.
+	</div>
+	<div id="tiger" style="text-align:center">
+		<a href=#
+			onmouseover="tiger.src='tigerdance.jpg';"
+			onmouseout="tiger.src='tiger.jpg';"
+			onclick="tiger.src='tigerfriend.jpg';">
+		<img border = 5px name = "tiger" src = "tiger.jpg">
+		</a>
+	</div>
+</body>
+
+</html>
