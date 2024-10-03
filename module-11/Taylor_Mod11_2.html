@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="Taylor_Mod11_2.css" type="text/css" rel="stylesheet" />
+	<title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+	<h1>Assignment 11.2: JavaScript - Part 3</h1>
+	<p>This is an interactive To Do List.  Type in your first item in the text box, then click "Add".  Click the "Display" button to see current items in the list.  Click the "Delete Last Entry" button if you'd like to remove the last entry.</p>
+
+<input type="text" id="userEntry" placeholder="Enter items to add">
+
+<button onClick="addItem()">Add</button>
+<button onClick="deleteItem()">Delete Last Entry</button>
+<button onClick="displayItems()">Display</button>
+
+    <ul id="displayList"></ul>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            let item = document.getElementById('userEntry').value;
+            if (item) {
+                items.push(item);
+                let index = items.length - 1;
+                alert(`${item} added to list at index number ${index}`);
+                document.getElementById('itemInput').value = ''; // Clear input field
+            } else {
+                alert('Please enter an item in the textbox');
+            }
+        }
+
+        function deleteItem() {
+            if (items.length > 0) {
+                let removedItem = items.pop();
+                alert(`${removedItem} was removed from the list`);
+            } else {
+                alert('No items to delete');
+            }
+        }
+
+        function displayItems() {
+            let displayList = document.getElementById('displayList');
+            displayList.innerHTML = '';
+            if (items.length === 0) {
+                alert('No items to display');
+            } else {
+                items.forEach((item, index) => {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = `${index + 1}. ${item}`;
+                    displayList.appendChild(listItem);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
