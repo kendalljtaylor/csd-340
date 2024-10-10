@@ -1,0 +1,35 @@
+title{
+	text-align: center;}
+
+h3 {
+	font-weight: 500;}
+
+
+.left {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid red;
+	border-radius: 15px;
+	float: left;
+	padding: 10px;
+	list-style-position: inside;
+	font-weight: 300;}
+
+.right {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px dashed red;
+	border-radius: 15px;
+	float: right;
+	padding: 10px;
+	list-style-position: inside;
+	ul{list-style-type: upper-roman;}
+	font-weight: 300;}
+
+.last {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	float: right;
+	text-decoration: underline;}

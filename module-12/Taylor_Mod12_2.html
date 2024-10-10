@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<link href="Taylor_Mod12_2.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div id= "container">
+	<h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+	<div class="left">
+	<h3>Top 10 Favorite Books</h3>
+	<ol id="book-list">
+		<li>It Starts With Us</li>
+		<li>It Ends With Us</li>
+		<li>The Housemaid</li>
+		<li>The Outsiders</li>
+		<li>Twilight</li>
+		<li>Harry Potter: The Sourcerer's Stone</li>
+		<li>The Hunger Games</li>
+		<li>Farenheit 451</li>
+		<li>To Kill a Mockingbird</li>
+		<li>Never Lie</li>
+	</ol>
+
+	
+	<div id="button">
+		<button onclick="displayTopToBottom()">Top to Bottom</button>
+		<button onclick="displayBottomToTop()">Bottom to Top</button>
+	</div>
+	</div>
+
+
+<script>
+const books = [
+"It Starts With Us",
+"It Ends With Us",
+"Thr Housemaid",
+"The Outsiders",
+"Twilight",
+"Harry Potter: The Sourcerer's Stone",
+"The Hunger Games",
+"Farenheit 451",
+"To Kill a Mockingbird",
+"Never Lie"
+];
+
+        function displayTopToBottom() {
+            const sortedBooks = [...books].sort();
+            displayBooks(sortedBooks);
+        }
+
+        function displayBottomToTop() {
+            const sortedBooks = [...books].sort().reverse();
+            displayBooks(sortedBooks);
+        }
+
+        function displayBooks(bookArray) {
+            let output = "<ul>";
+            for (let i = 0; i < bookArray.length; i++) {
+                output += `<li>${i + 1}. ${bookArray[i]}</li>`;
+            }
+            output += "</ul>";
+            document.getElementById("book-list").innerHTML = output;
+        }
+
+</script>
+
+<div class="right">
+<h3>5 Things I've Learned Since the Course Started</h3>
+<ul>
+<li>How to Add Links to an HTML Webpage</li>
+<li>How to use basic styles on CSS</li>
+<li>Web designers should be knowledgable of people's viewing habits</li>
+<li>People recall memories different every time they're accessed</li>
+<li>How to utilize google fonts</li>
+</ul>
+</div>
+
+<div class="last">
+<a href="https://kendalljtaylor.github.io/csd-340/" style="float: right">Back to Landing Page</a>
+</div>
+</div>
+</body>
+</html>
